@@ -10,6 +10,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
         body {
             font-family: Arial;
         }
@@ -385,26 +424,33 @@
                 </div>
                 <div class="col-4">
                     <div class="card">
-                      <img src="img/shop-list/polocot/Tk-link-1.jpg"  style="width:100%">
-                      <h1>TK Link</h1>
-                      <p>- Polyyester 100% เนื้อผ้าแข็งกระด้าง ไม่ยืด ไม่หด ยับยาก รีดง่าย ราคาไม่แพง
-                        ส่วนใหญ่ใช้เป็นเสื้อแจก</p>
+                        <img src="img/shop-list/polocot/Tk-link-1.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <h1>TK Link</h1>
+                            <div class="text">- Polyyester 100% เนื้อผ้าแข็งกระด้าง ไม่ยืด ไม่หด ยับยาก รีดง่าย ราคาไม่แพง
+                                ส่วนใหญ่ใช้เป็นเสื้อแจก</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="card">
-                    <img src="img/shop-list/polocot/CVC.jpeg"  style="width:100%">
-                    <h1>TK Link</h1>
-                    <p>-Cotton 80% + Polyester 20% เนื้อผ้าหนานุ่ม ใส่สบาย ระบายอากาศได้ดีมาก ผ้าไม่หดตัว อยู่ทรง
-                        สวยงาม ราคาค่อนข้างสูง เหมาะใส่ทำงานในห้องแอร์</p>
+                        <img src="img/shop-list/polocot/CVC.jpeg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <h1>CVC</h1>
+                            <div class="text">-Cotton 80% + Polyester 20% เนื้อผ้าหนานุ่ม ใส่สบาย ระบายอากาศได้ดีมาก ผ้าไม่หดตัว อยู่ทรง
+                                สวยงาม ราคาค่อนข้างสูง เหมาะใส่ทำงานในห้องแอร์</div>
+                        </div>
                 </div>
             </div>
                 <div class="col-4">
                     <div class="card">
-                    <img src="img/shop-list/polocot/TC Lacoast,Juti.jpg"  style="width:100%">
-                    <h1>TCLacoast,Juti</h1>
-                    <p>-Cotton 35%+Polyester 65% เป็นขุยค่อนข้างยาก สวมใส่สบาย ระบายอากาศได้ดี ผ้าไม่หนาจนเกินไป
-                        เหมาะสำหรับใส่ในออฟฟิต</p>
+
+                        <img src="img/shop-list/polocot/TC Lacoast,Juti.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <h1>TCLacoast,Juti</h1>
+                            <div class="text">-Cotton 35%+Polyester 65% เป็นขุยค่อนข้างยาก สวมใส่สบาย ระบายอากาศได้ดี ผ้าไม่หนาจนเกินไป
+                                เหมาะสำหรับใส่ในออฟฟิต</div>
+                        </div>
                 </div>
             </div>
             </div>
