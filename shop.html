@@ -10,6 +10,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
         body {
             font-family: Arial;
         }
@@ -391,19 +432,21 @@
                 <div class="section-title-2 bordr-rights">
                     <h2 class="border-left-rights">เนื้อผ้าที่แนะนำ</h2>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card">
-                        <img src="img/shop-list/tshirtcot/supersoff20.jpg" style="width:100%">
-                        <h1>surersoff</h1>
-                        <p>เทคนิค Micro Brushing แปรงบนผิวผ้าเพื่อผิวสัมผัสนุ่มคล้ายกำมะหยี่(Velvety
-                            soft)สัมผัสได้ตั้งแต่สวมใส่หรือแม้เป็นหลังซัก ผลิตจากเส้นใยธรรมชาติ สัมผัสนุ่มใส่สบาย
-                            คงรูปร่าง ไม่เสียทรง ย้อมด้วยสีไร้กำมะถันไม่ระคายผิวเป็นมิตรกับสิ่งแวดล้อม
-                        </p>
+
+                        <img src="img/shop-list/tshirtcot/supersoff20.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <h1>surersoff</h1>
+                            <div class="text">-เทคนิค Micro Brushing แปรงบนผิวผ้าเพื่อผิวสัมผัสนุ่มคล้ายกำมะหยี่(Velvety
+                                soft)สัมผัสได้ตั้งแต่สวมใส่หรือแม้เป็นหลังซัก ผลิตจากเส้นใยธรรมชาติ สัมผัสนุ่มใส่สบาย
+                                คงรูปร่าง ไม่เสียทรง ย้อมด้วยสีไร้กำมะถันไม่ระคายผิวเป็นมิตรกับสิ่งแวดล้อม</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                 </div>
             </div>
         </div>
