@@ -275,7 +275,7 @@ label{
 /*  2.1  Header-Top
 /*----------------------------------------*/
 .header-area {
-  background: #333 none repeat scroll 0 0;
+  background: #ff0000 none repeat scroll 0 0;
 }
 .header-top {
   border-bottom: 1px solid #666;
@@ -284,13 +284,13 @@ label{
 .header-top-left ul {}
 .header-top-left li {
   border-right: 1px solid #666;
-  color: #bdbdbd;
+  color: #ffffff;
   display: inline-block;
   line-height: 1;
   padding: 18px 20px;
 }
 .header-top-left li:first-child {
-  border-left: 1px solid #666;
+  border-left: 1px solid #ffffff;
 }
 .header-top-left li span {
   font-size: 12px;
@@ -1642,7 +1642,7 @@ label{
   position: relative;
 }
 .footer-top::before {
-  background: #000 none repeat scroll 0 0;
+  background: #ff0000 none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -1706,7 +1706,7 @@ label{
   line-height: 20px;
 }
 .footer-menu ul li:hover a {
-  color: #f6416c;
+  color: #f00000;
 }
 .footer-message-box {
   padding-right: 0;
@@ -1780,7 +1780,7 @@ label{
   margin-left: 0;
 }
 .footer-social a:hover {
-  background: #f6416c none repeat scroll 0 0;
+  background: #ff003c none repeat scroll 0 0;
   color: #fff;
 }
 /* ====================================== 
